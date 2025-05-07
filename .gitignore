@@ -1,0 +1,27 @@
+# node_modules и сборка
+node_modules/
+dist/
+.cache/
+
+# временные файлы редакторов
+.vscode/
+.idea/
+*.swp
+*.log
+
+# Windows
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Webpack dev server
+webpack-stats.json
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv
+.env

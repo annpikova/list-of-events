@@ -1,0 +1,149 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111;
+  --input-bg: #f9f9f9;
+  --border-color: #ccc;
+  --button-bg: #5e72e4;
+  --button-hover: #324cdd;
+  --card-bg: #fff;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --error-color: #e63946;
+  --item-border: #eee;
+  --action-bg: #f1f1f1;
+  --action-hover: #ddd;
+}
+
+[data-theme='dark'] {
+  --bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --input-bg: #2c2c2c;
+  --border-color: #444;
+  --button-bg: #4e5fd6;
+  --button-hover: #3d4ac9;
+  --card-bg: #2a2a2a;
+  --box-shadow: rgba(255, 255, 255, 0.05);
+  --error-color: #f87171;
+  --item-border: #444;
+  --action-bg: #444;
+  --action-hover: #666;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app-container {
+  background-color: var(--card-bg);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px var(--box-shadow);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--text-color);
+}
+
+.theme-toggle-button {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 20px;
+}
+
+.theme-toggle-button:hover {
+  background-color: var(--button-hover);
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.event-form input {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.event-form button {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-form button:hover {
+  background-color: var(--button-hover);
+}
+
+.event-form .error {
+  color: var(--error-color);
+  font-size: 14px;
+  margin-top: -6px;
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  border-bottom: 1px solid var(--item-border);
+  padding: 16px 0;
+}
+
+.event-item span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.event-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.event-actions button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--action-bg);
+  color: var(--text-color);
+  transition: background 0.3s;
+}
+
+.event-actions button:hover {
+  background-color: var(--action-hover);
+}
